@@ -1,42 +1,52 @@
 package com.TestNG_Selenium;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class Day26_DataProvider_Main {
-	
-	package com.POM.Main;
 
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.FindAll;
-	import org.openqa.selenium.support.FindBy;
-	import org.openqa.selenium.support.PageFactory;
+	@FindBy(name = "username")
+	WebElement username;
 
-	public class Main_class_1 {
+	@FindBy(name = "password")
+	WebElement password;
 
-		@FindBy(name = "username")
-		WebElement username;
-		@FindBy(name = "password")
-		WebElement password;
-		@FindBy(id = "submit")
-		WebElement submit;
+	@FindBy(id = "submit")
+	WebElement submit;
 
-		public Main_class_1(WebDriver driver) {
-			PageFactory.initElements(driver, this);
-		}
+	// success message
+	@FindBy(xpath = "//h1[text()='Logged In Successfully']")
+	WebElement successMsg;
 
-		public void username(String name) {
-			username.sendKeys(name);
+	// error message
+	@FindBy(id = "error")
+	WebElement errorMsg;
 
-		}
-
-		public void password(String pass) {
-			password.sendKeys(pass);
-		}
-
-		public void submit() {
-			submit.click();
-		}
-
+	public Day26_DataProvider_Main(WebDriver driver) {
+		PageFactory.initElements(driver, this);
 	}
 
+	public void username(String name) {
+		username.clear();
+		username.sendKeys(name);
+	}
 
+	public void password(String pass) {
+		password.clear();
+		password.sendKeys(pass);
+	}
+
+	public void submit() {
+		submit.click();
+	}
+
+	public String getSuccessMessage() {
+		return successMsg.getText();
+	}
+
+	public String getErrorMessage() {
+		return errorMsg.getText();
+	}
 }

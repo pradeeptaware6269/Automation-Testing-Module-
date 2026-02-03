@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Project.Runner1">
+      <class name="com.TestNG_Selenium.Day26_runner">
         <methods>
+          <include name="test1"/>
           <include name="after"/>
           <include name="before"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- Project.Runner1 -->
+      </class> <!-- com.TestNG_Selenium.Day26_runner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
