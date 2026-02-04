@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class Day26_runner {
+public class Day26_Dataprovider_runner {
 
 	WebDriver driver;
 	Day26_DataProvider_Main ms;

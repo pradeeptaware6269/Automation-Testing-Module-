@@ -4,22 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.TestNG.Day12_4_alwaysRun"/>
-      <class name="com.TestNG.Day15_3_Practice"/>
-      <class name="com.TestNG.Day15_0_isEnable"/>
-      <class name="com.TestNG.Day15_1_isSelected"/>
-      <class name="com.TestNG.Day14_0_TestCaseValidation"/>
-      <class name="com.TestNG.Day13_1_Practice"/>
-      <class name="com.TestNG.Day12_6_InvocationCount"/>
-      <class name="com.TestNG.Day14_1_TestCaseValidation"/>
-      <class name="com.TestNG.Day15_2_getPageSource"/>
-      <class name="com.TestNG.Day12_0TestNG_Attributes"/>
-      <class name="com.TestNG.Day12_2enable"/>
-      <class name="com.TestNG.Day12_5_TimeOut"/>
-      <class name="com.TestNG.Day12_1Attribute_Priority"/>
-      <class name="com.TestNG.Day12_3_dependsonmethod"/>
-      <class name="com.TestNG.Day12_7_description"/>
-      <class name="com.TestNG.Day13_0_validation_testcase"/>
-      <class name="com.TestNG.Day12_8_group"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
