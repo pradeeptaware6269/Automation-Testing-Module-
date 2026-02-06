@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Day28_JavaScript_Executer {
+public class Day28_0_JavaScript_Executer {
 
 	WebDriver driver;
 
