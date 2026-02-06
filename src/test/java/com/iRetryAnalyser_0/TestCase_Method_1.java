@@ -1,4 +1,4 @@
-package com.iRetryAnalyser;
+package com.iRetryAnalyser_0;
 
 import org.testng.Assert;
 import org.testng.SkipException;

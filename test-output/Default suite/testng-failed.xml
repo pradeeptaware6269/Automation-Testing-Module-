@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.iRetryAnalyser.TestCase_Method_2">
+      <class name="com.iRetryAnalyser_1.TestCase">
         <methods>
-          <include name="test7"/>
-          <include name="test10"/>
-          <include name="test4"/>
+          <include name="after"/>
+          <include name="testLogin" invocation-numbers="1 3"/>
           <include name="before"/>
-          <include name="test9"/>
-          <include name="test6"/>
-          <include name="test3"/>
-          <include name="test5"/>
-          <include name="end"/>
         </methods>
-      </class> <!-- com.iRetryAnalyser.TestCase_Method_2 -->
+      </class> <!-- com.iRetryAnalyser_1.TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

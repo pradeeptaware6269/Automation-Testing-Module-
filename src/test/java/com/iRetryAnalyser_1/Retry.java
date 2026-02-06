@@ -1,10 +1,10 @@
-package com.iRetryAnalyser;
+package com.iRetryAnalyser_1;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class Retry_0 implements IRetryAnalyzer {
-	int start = 1;
+public class Retry implements IRetryAnalyzer {
+	int start = 0;
 	int end = 5;
 
 	@Override
