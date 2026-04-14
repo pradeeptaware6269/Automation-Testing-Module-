@@ -9,7 +9,7 @@ public class Day12_5_TimeOut {
 	}
 
 	// This test will run first
-	@Test(priority = 1, timeOut = 2200)
+	@Test(priority = 1, timeOut = 2000)
 	void display() {
 		System.out.println("Display Module");
 		// If any error are occured are here then search method cannot be exucute

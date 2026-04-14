@@ -23,6 +23,7 @@ public class Day18_1Practice {
 		driver.manage().window().maximize();
 	}
 
+	
 	@Test
 	public void test() {
 

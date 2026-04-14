@@ -23,7 +23,8 @@ public class Day17_frame_2 {
 
 	@Test
 	void test() {
-		driver.switchTo().frame(driver.findElement(By.id("singleframe")));
+		WebElement element = driver.findElement(By.id("singleframe"));
+		driver.switchTo().frame(element);
 		WebElement input = driver.findElement(By.xpath("/html/body/section/div/div/div/input"));
 		input.sendKeys("welcome");
 

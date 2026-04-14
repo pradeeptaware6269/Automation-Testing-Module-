@@ -1,129 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-06T17:44:00 IST" name="Suite" finished-at="2026-02-06T17:44:59 IST" duration-ms="59090">
+  <suite started-at="2026-04-14T09:03:57 IST" name="Default suite" finished-at="2026-04-14T09:04:06 IST" duration-ms="9450">
     <groups>
     </groups>
-    <test started-at="2026-02-06T17:44:00 IST" name="Test" finished-at="2026-02-06T17:44:07 IST" duration-ms="6639">
-      <class name="com.TestNG_Selenium.Day30_Parameter">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@54d9d12d]" started-at="2026-02-06T17:44:00 IST" name="setup" finished-at="2026-02-06T17:44:05 IST" duration-ms="4897" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://practicetestautomation.com/practice-test-login/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-04-14T09:03:57 IST" name="Default test" finished-at="2026-04-14T09:04:06 IST" duration-ms="9450">
+      <class name="com.tka.jbk.crm_1.Selenium_Script.Day12_new_HeadLess_Browser">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tka.jbk.crm_1.Selenium_Script.Day12_new_HeadLess_Browser@75d4a5c2]" started-at="2026-04-14T09:03:57 IST" name="setup" finished-at="2026-04-14T09:04:06 IST" duration-ms="9341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testcase(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@54d9d12d]" started-at="2026-02-06T17:44:05 IST" name="testcase" finished-at="2026-02-06T17:44:07 IST" duration-ms="1474" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testCase()[pri:0, instance:com.tka.jbk.crm_1.Selenium_Script.Day12_new_HeadLess_Browser@75d4a5c2]" started-at="2026-04-14T09:04:06 IST" name="testCase" finished-at="2026-04-14T09:04:06 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@54d9d12d]" started-at="2026-02-06T17:44:07 IST" name="end" finished-at="2026-02-06T17:44:07 IST" duration-ms="183" status="PASS">
+        </test-method> <!-- testCase -->
+        <test-method is-config="true" signature="end()[pri:0, instance:com.tka.jbk.crm_1.Selenium_Script.Day12_new_HeadLess_Browser@75d4a5c2]" started-at="2026-04-14T09:04:06 IST" name="end" finished-at="2026-04-14T09:04:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.TestNG_Selenium.Day30_Parameter -->
-    </test> <!-- Test -->
-    <test started-at="2026-02-06T17:44:07 IST" name="Test1" finished-at="2026-02-06T17:44:18 IST" duration-ms="11377">
-      <class name="com.TestNG_Selenium.Day30_Parameter">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@4988d8b8]" started-at="2026-02-06T17:44:07 IST" name="setup" finished-at="2026-02-06T17:44:15 IST" duration-ms="8247" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://practicetestautomation.com/practice-test-login/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testcase(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@4988d8b8]" started-at="2026-02-06T17:44:15 IST" name="testcase" finished-at="2026-02-06T17:44:17 IST" duration-ms="1328" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@4988d8b8]" started-at="2026-02-06T17:44:17 IST" name="end" finished-at="2026-02-06T17:44:18 IST" duration-ms="1791" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.TestNG_Selenium.Day30_Parameter -->
-    </test> <!-- Test1 -->
-    <test started-at="2026-02-06T17:44:18 IST" name="Test2" finished-at="2026-02-06T17:44:59 IST" duration-ms="40998">
-      <class name="com.TestNG_Selenium.Day30_Parameter">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@305b7c14]" started-at="2026-02-06T17:44:18 IST" name="setup" finished-at="2026-02-06T17:44:25 IST" duration-ms="6506" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://practicetestautomation.com/practice-test-login/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testcase(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@305b7c14]" started-at="2026-02-06T17:44:25 IST" name="testcase" finished-at="2026-02-06T17:44:29 IST" duration-ms="4454" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.TestNG_Selenium.Day30_Parameter@305b7c14]" started-at="2026-02-06T17:44:29 IST" name="end" finished-at="2026-02-06T17:44:59 IST" duration-ms="30029" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- com.TestNG_Selenium.Day30_Parameter -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.tka.jbk.crm_1.Selenium_Script.Day12_new_HeadLess_Browser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

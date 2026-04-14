@@ -1,9 +1,6 @@
 package com.TestNG_Selenium;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Day18_window {
+
 	WebDriver driver;
 
 	@BeforeMethod
@@ -22,38 +20,52 @@ public class Day18_window {
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
 
+		// Close login popup
+		try {
+			driver.findElement(By.xpath("//button[text()='✕']")).click();
+		} catch (Exception e) {
+			// Ignore if not present
+		}
 	}
 
 	@Test
-	public void window_test() {
+	public void window_test() throws InterruptedException {
 
+		String parentWindow = driver.getWindowHandle();
+
+		// Click Myntra link
 		driver.findElement(By.linkText("Myntra")).click();
 
-		Set<String> window_Ele = driver.getWindowHandles();
-		List<String> list_window = new ArrayList<>(window_Ele);
-		// HERE We can Validate the Mitra page
-		String actual_result = driver.getTitle();
-		System.out.println(actual_result);
-		String expected_result = "Online Shopping India Mobile, Cameras, Lifestyle & more Online @ Flipkart.com";
+		// Get all windows
+		Set<String> windowHandles = driver.getWindowHandles();
 
-		Assert.assertEquals(actual_result, expected_result);
+		// Switch to child window
+		for (String window : windowHandles) {
+			if (!window.equals(parentWindow)) {
+				driver.switchTo().window(window);
+				break;
+			}
+		}
 
-		driver.switchTo().window(list_window.get(1));
+		// Validate Myntra page title
+		String actualTitle = driver.getTitle();
+		System.out.println("Child Window Title: " + actualTitle);
 
+		Assert.assertTrue(actualTitle.contains("Myntra"));
+
+		// Perform action in child window
 		WebElement searchBox = driver.findElement(By.className("desktop-searchBar"));
 		searchBox.sendKeys("Shoes for men");
-		driver.switchTo().window(list_window.get(0));
 
-		String actual = driver.getCurrentUrl();
-		String expected = "https://www.flipkart.com/";
+		// Switch back to parent window
+		driver.switchTo().window(parentWindow);
 
-		Assert.assertEquals(actual, expected);
-
+		String currentUrl = driver.getCurrentUrl();
+		Assert.assertEquals(currentUrl, "https://www.flipkart.com/");
 	}
 
 	@AfterMethod
 	public void end() {
 		driver.quit();
 	}
-
 }
